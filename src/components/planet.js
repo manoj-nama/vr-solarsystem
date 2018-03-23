@@ -40,21 +40,14 @@ export default class Planet extends Component {
   }
 
   render() {
-    const { planet } = this.props;
+    const { planet, x, z } = this.props;
     const { rotation } = this.state;
     return (
-      <View>
-        <Model
-          source={{ obj: asset(`${planet.name}.obj`) }}
-          texture={asset(`${planet.name}.jpg`)}
-          style={{
-            transform: [
-              { scale: 30 },
-              { rotateY: rotation }
-            ]
-          }}
-        />
-      </View>
+      <Model
+        source={{ obj: asset(`${planet.name}.obj`) }}
+        texture={asset(`${planet.name}.jpg`)}
+        style={{ transform: [{ scale: 30 }] }}
+      />
     );
   }
 }

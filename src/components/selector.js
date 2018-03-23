@@ -15,7 +15,11 @@ export default class PlanetSelector extends Component {
           planets.map(planet => {
             const selectedClass = selected === planet.name && styles.selected;
             return (
-              <VrButton key={planet.name} onClick={() => onSelect(planet)} style={[styles.btn, selectedClass]}>
+              <VrButton
+                key={planet.name}
+                onClick={() => onSelect(planet)}
+                style={[styles.btn, selectedClass]}
+              >
                 <Text style={styles.label}>
                   {planet.label}
                 </Text>
@@ -35,7 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.2)',
     width: 250,
     transform: [
-      { translate: [150, 100, 200] }
+      { translate: [200, 120, -500] }
     ]
   },
   btn: {
@@ -50,5 +54,10 @@ const styles = StyleSheet.create({
   },
   selected: {
     backgroundColor: '#fc0'
+  },
+  focused: {
+    transform: [
+      { scale: 1.4 }
+    ]
   }
 });
