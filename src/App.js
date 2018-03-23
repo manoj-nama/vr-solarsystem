@@ -12,6 +12,7 @@ import {
 import planetData from './data/planets';
 import Planet from './components/planet';
 import PlanetSelector from './components/selector';
+import PlanetInfo from './components/info';
 
 export default class SolarSystem extends Component {
   constructor(props) {
@@ -33,7 +34,12 @@ export default class SolarSystem extends Component {
         <DirectionalLight intensity={0.3} style={{ color: '#fff', transform: [{ rotateX: '80deg' }] }} />
 
         <Planet planet={planet} />
-        <PlanetSelector planets={planetData} selected={planet.name} onSelect={this.onSelect} />
+        <PlanetSelector 
+          planets={planetData} 
+          selected={planet.name} 
+          onSelect={this.onSelect} 
+        />
+        <PlanetInfo planet={planet} />
       </View>
     );
   }

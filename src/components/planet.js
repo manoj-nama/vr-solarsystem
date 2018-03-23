@@ -49,7 +49,7 @@ export default class Planet extends Component {
           texture={asset(`${planet.name}.jpg`)}
           style={{
             transform: [
-              { scale: 30 },
+              { scale: planet.size },
               { rotateY: rotation }
             ]
           }}
