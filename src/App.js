@@ -47,7 +47,6 @@ export default class SolarSystem extends Component {
 
 const styles = StyleSheet.create({
   scene: {
-    backgroundColor: '#000',
-    transform: [{ translate: [0, 0, 300] }]
+    transform: [{ translate: [0, 0, 100] }]
   }
 });

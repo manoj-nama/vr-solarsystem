@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.2)',
     width: 250,
     transform: [
-      { translate: [200, 100, -200] }
+      { translate: [350, 100, -200] }
     ]
   },
   btn: {

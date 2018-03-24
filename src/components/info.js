@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     width: 280,
     paddingBottom: 20,
     transform: [
-      { translate: [-450, 300, -200] }
+      { translate: [-600, 300, -200] }
     ]
   },
   name: {
